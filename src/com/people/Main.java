@@ -46,7 +46,7 @@ public class Main {
         for(Person person: school.getMembers()){
             if(person.getClass() == Student.class){
                 Student student=(Student)person;
-                System.out.println(student.getName()+"'s GPA: " +student.calculateGpa());
+                System.out.println(student.getName()+"'s GPA: " +String.format("%.2f",student.calculateGpa()));
             }
             if(person.getClass() == Teacher.class){
                 Teacher teacher=(Teacher)person;
